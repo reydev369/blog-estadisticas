@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+}
+header
+ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+ }
+ .nav_links {
+    list-style: none;
+    background: white;
+
+ }
+ #logo{
+    width: 140px;
+    height: 60px;
+ }
+
+ .nav_links li {
+    display: inline-block;
+    margin-right: 80px;
+    background-color: white;
+
+}
+
+
+
+.nav_links li a{
+    text-decoration: none;
+    color: black;
+    background: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+
+.nav_links li a:hover {
+    text-decoration: none;
+    color: white;
+    background: #FF7723;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 350ms;
+
+
+}
+.button {
+    background-color: #FF7723;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 55px;
+    font-size: 20px;
+    margin-left: 130px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.button-delete {
+    background-color: #ff2323;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 55px;
+    font-size: 20px;
+    margin-left: 130px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.button-edit {
+    background-color: #3ca533;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 55px;
+    font-size: 20px;
+    margin-left: 130px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+#title{
+    margin-left: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    border: 2px solid rgba(148, 148, 148, 0.76);
+    border-radius: 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+.container-no-border{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+
+.container-post{
+    width: 90%;
+    height: auto;
+    border: 2px solid rgba(241, 241, 184, 0.76);
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-post form{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.input-text {
+    width: 90%;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.container-post button{
+    align-self: flex-end;
+    margin: 20px;
+}
+.container-post form .input-content {
+    width: 90%;
+    height: 500px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    height: auto;
+    background-color: rgba(241, 241, 184, 0.76);
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+
+}
+.card form{
+    background: transparent;
+}
+.card h2 {
+    align-self:flex-start;
+    margin: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.card h2:hover{
+    font-size: 25px;
+}
+.content-card{
+    width: 90%;
+    background-color: transparent;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.content-card *{
+    display: none;
+}
+.content-card p:first-of-type{
+    background-color: transparent;
+    width: 90%;
+    background-color: transparent;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.content-card:hover {
+    color: gray;
+}
+.card input {
+    align-self: center;
+    width: 90%;
+    height: 200px;
+    margin: 10px;
+    background-color: transparent;
+}
+.card img {
+    align-self: center;
+    width: 90%;
+    height: 200px;
+    margin: 10px;
+    background-color: transparent;
+}
+.card .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row ;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    background-color: transparent;
+
+}
+.buttons a button{
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+
+}
+.buttons a{
+    background: transparent;
+}
+.container-show-post{
+    margin: 0px auto;
+    padding: 0px auto;
+    width: 80%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.container-show-post #image_foot {
+    font-size: 15px;
+    display: block;
+    float: left;
+    font-style: italic;
+
+}
+.container-show-post #title_post {
+    font-size: 40px;
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+}
+.container-show-post #content_post{
+    width: 90%;
+    text-align: justify;
+    margin: 10px;
+
+}
+.image_source{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+#new_post{
+    text-align: center;
+}
