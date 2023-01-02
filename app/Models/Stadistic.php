@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Stadistic extends Model
 {
 
-    protected $fillable = ['id_visitor','id_post','country_visit','date_visit','click_image','click_title','click_content'];
+    protected $fillable = ['id_visitor','id_post','click_image','click_title','click_content'];
     use HasFactory;
 }

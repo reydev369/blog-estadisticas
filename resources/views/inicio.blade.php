@@ -19,6 +19,6 @@
 </div>
     </form>
     @endforeach
-    <script src="{{asset('js/script.js')}}"></script>
+    <script src="{{asset('js/scriptapp.js')}}"></script>
 
     @endsection

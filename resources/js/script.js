@@ -1,11 +1,5 @@
 
-
-
-
-console.log("Js working")
-
-
-var flag = false;
+console.log("hola mundo")
 
 
 $(".title-card").each(function(id){
@@ -53,7 +47,7 @@ function sendClick(id,type,clickCard){
       },
       success:function(response){
         console.log(response.success);
-        window.location.href = "http://127.0.0.1:8000/post/"+id+"?";
+        window.location.href = "http://blog-laravel.test/post/"+id+"?";
       },
       error: function(error) {
        console.log(error);

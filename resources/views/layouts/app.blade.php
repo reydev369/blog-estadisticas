@@ -14,7 +14,7 @@
 			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			  crossorigin="anonymous"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
-    <script src="{{asset('js/script.js')}}"></script>
+    <script src="{{asset('js/scriptapp.js')}}"></script>
     <title>@yield('title')</title>
 </head>
 
@@ -32,7 +32,7 @@
                     @guest
                     <a href="{{URL('/masvisitados')}}">Más visitados</a>
                     @endguest
-                    
+
                 </li>
                 <li>
                 <a href="{{URL('/nosotros')}}">Nosotros</a>

@@ -1,27 +1,26 @@
+console.log("chart.js is running")
 
-let
-gra
-phic = document.getElementById("graphic").getContext('2d');
 
+let graphic = document.getElementById("graphic").getContext('2d');
 let url = "/masvisitados/chart";
-
 var Visits = new Array();
 var Posts = new Array();
 
-$.get(url, function(response){
-    response.forEach(function (data){
+$.get(url, function (response) {
+    response.forEach(function (data) {
         Posts.push(data.title);
         Visits.push(data.total_visits);
     });
 
-    var chart = new Chart(graphic,{
+
+    var chart = new Chart(graphic, {
         type: "bar",
-        data:{
+        data: {
             labels: Posts,
-            datasets:[{
-                label: 'Estadísticas de artículos',
+            datasets: [{
+                label: 'Estadisticas de los artículos',
                 data: Visits,
-                backgroundColor:[
+                backgroundColor: [
                     'rgba(255, 99, 132)',
                     'rgba(255, 159, 64)',
                     'rgba(255, 205, 86)',
@@ -32,11 +31,13 @@ $.get(url, function(response){
         },
         options: {
             scales: {
-                y: {
-                    beginZero: true
-                }
+              y: {
+                beginAtZero: true
+              }
             }
-        }
-    });
+          },
 
+
+    });
 });
+
